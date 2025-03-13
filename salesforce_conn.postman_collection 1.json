@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "c0144546-c683-49d2-89a7-b89e029899f4",
+		"name": "salesforce_conn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://swift--areadev.sandbox.my.salesforce.com/services/apexrest/ContractService",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "P@9x!vQz7#Lm$Kd3&Tw4^NsY9HhFtPQsNrtTLxTryWgGpkHx",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "simplify.integration@swift.com.dev",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "fv",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "client_secret",
+						"value": "f",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"contractId\": \"1234567890\",\r\n            \"status\": \"Active\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://swift--areadev.sandbox.my.salesforce.com/services/apexrest/ContractService",
+					"protocol": "https",
+					"host": [
+						"swift--areadev",
+						"sandbox",
+						"my",
+						"salesforce",
+						"com"
+					],
+					"path": [
+						"services",
+						"apexrest",
+						"ContractService"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
